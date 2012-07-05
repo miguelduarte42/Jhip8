@@ -451,11 +451,9 @@ public class Processor extends Thread{
     			0xF0,0x80,0xF0,0x80,0xF0, //E
     			0xF0,0x80,0xF0,0x80,0x80  //F
     	};
-    	
-    	int memoryIndex = 0;
 
     	for(int i = 0 ; i < sprites.length ; i++)
-    		memory[memoryIndex++] = sprites[i];
+    		memory[i] = sprites[i];
     }
 	
 	/**
